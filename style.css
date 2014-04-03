@@ -1,0 +1,17 @@
+ARTICLE.art_1
+{
+	color: #0309FF;
+	width: 640px;
+	border-style: solid;
+	border-color: #FF0004;
+	border-radius: 10px;
+	border-width: 4px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-weight: bold;
+	background-color: rgba(255, 255, 0, 1);
+	padding-left: 10px;
+}
+HTML
+{
+	background-color:#01FFF3;
+}
