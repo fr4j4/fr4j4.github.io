@@ -8,10 +8,11 @@ ARTICLE.art_1
 	border-width: 4px;
 	font-family: "Comic Sans MS", cursive, sans-serif;
 	font-weight: bold;
-	background-color: rgba(255, 255, 0, 1);
+	background-color: rgba(255, 255, 0, 0.8);
 	padding-left: 10px;
+	font-size: 15pt;
 }
 HTML
 {
-	background-color:#01FFF3;
+	background-color: #49CFCC;
 }
