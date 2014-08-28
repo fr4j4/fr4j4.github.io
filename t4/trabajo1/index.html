@@ -6,14 +6,17 @@
 		<meta name="author" content="Grupo 2"><!-- Declaracion del autor "Grupo 2" -->
 	</head>
 	<body  bgcolor="#041C57"><!--Cuerpo de la pagina color de fondo en hexadecimal -->
+
 		<center>
-		<img src="./img/title2.gif" title="El Trompo" height="120" width="500">
+		<img src="./img/title2.gif" title="El Trompo" height="100" width="480">
 		<br>
-		<img src="./img/title3.gif" title="Cultura Chilena" width="200" height="50">
+		<img src="./img/title3.gif" title="Cultura Chilena" width="200" height="30">
 		<!---El atributo "title" sirve para mostrar un texto cuando el cursos se posiciona sobre la imagen respectiva -->
 		<br>
 		<img src="./img/trompo2.gif" width="150" title="Trompo en movimiento">
-		<p>
+		<p><audio id="cueca" width="300" height="16" controls="controls" src="./media/cueca.mp3" autoplay loop volume=0 style="border:solid;" ></audio>
+
+		<br>
 			<marquee direction="up" bgcolor="#00040D" scrollamount="1" scrolldelay="60" truespeed="true" style="border:dotted;border-color:red;" width="600">
 				<font face="comic sans ms" size="5" color="#49A200">
 				Es un juguete tradicional de madera, con forma de pera invertida 
@@ -25,6 +28,10 @@
 		</p>
 		</center>
 
+<script>
+a=document.getElementById("cueca");
+a.volume=0.05;
+</script> 
 
 
 	</body >
