@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>Cultura Chilena - El trompo</title>
-		<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" >
 		<meta name="author" content="Grupo 2"><!-- Declaracion del autor "Grupo 2" -->
 	</head>
-	<body  bgcolor="#041C57"><!--Cuerpo de la pagina color de fondo en hexadecimal -->
-
+	<body bgcolor="#041C57"><!--Cuerpo de la pagina color de fondo en hexadecimal -->
 		<center>
 		<img src="./img/title2.gif" title="El Trompo" height="100" width="480">
 		<br>
 		<img src="./img/title3.gif" title="Cultura Chilena" width="200" height="30">
 		<!---El atributo "title" sirve para mostrar un texto cuando el cursos se posiciona sobre la imagen respectiva -->
-		<br>
-		<img src="./img/trompo2.gif" width="150" title="Trompo en movimiento">
-		<p><audio id="cueca" width="400" height="16" controls="controls" src="./media/cueca.mp3" autoplay loop  style="border:solid;" ></audio>
-
-		<br>
-			<marquee direction="up" bgcolor="#00040D" scrollamount="1" scrolldelay="60" truespeed="true" style="border:dotted;border-color:red;" width="600" height="130">
-				<font face="comic sans ms" size="5" color="#49A200">
+		<table border="0" ><!---usar una tabla para posicionar imagenes -->
+			<td width="50%"><!---td es una celda de la tabla -->
+			<marquee direction="up" bgcolor="#00040D" scrollamount="1" scrolldelay="60" truespeed="true" style="border:dotted;border-color:red;" width="600" height="350">
+				<center><font face="comic sans ms" size="5" color="#49A200">
 				Es un juguete tradicional de madera, con forma de pera invertida 
-			   que tiene una p&uacute;a de fierro en la punta sobre la cual gira.<br>
-			  	En su superficie, desde el extremo contrario a la punta, se enrolla
-			   un cordel o lienza que servir&aacute; para arrojarlo al suelo.	
-				</font>
-			</marquee>
+				que tiene una púa de fierro en la punta sobre la cual gira.<br>
+				En su superficie, desde el extremo contrario a la punta, se enrolla
+				un cordel o lienza que servirá para arrojarlo al suelo.	
+				</font></center>
+			</marquee><br>
+			<center>
+			<a href="http://www.educarchile.cl/ech/pro/app/detalle?id=136641"><font color= "white">=>Articulo sobre el trompo en EducarChile <=</font></a>
+			</center>
+			</td>
+			<td width="=50%">
+				<center>
+				<img src="./img/trompo2.gif" width="250" height="350" title="Trompo en movimiento">
+				</center>
+			</td>
+		</table>
 		</p>
+		<br>
 		</center>
-
-<script>
-a=document.getElementById("cueca");
-a.volume=0.05;
-</script> 
-
-
-	</body >
+		</body>
 
 	<footer>
 		<p>
@@ -43,11 +43,10 @@ a.volume=0.05;
 
 				truespeed para que la velocidad sea mas rapida y no se vea con tanto delay, ni tan brusco el movimiento -->
 
-				<font size="5" color="silver" face="Comic Sans MS"><b><font color = "yellow">Grupo2</font>&nbsp;&nbsp;&nbsp;&nbsp;Integrantes: Alejandra Hidalgo - Javier Godoy - Humberto Campos - Francisco Gonzalez - Gabriel Galilea</b>
+				<font size="5" color="silver" face="Comic Sans MS"><b><font color="yellow">Grupo2</font>&nbsp;&nbsp;&nbsp;&nbsp;Integrantes: Alejandra Hidalgo - Javier Godoy - Humberto Campos - Francisco Gonzalez - Gabriel Galilea</b>
 				<!-- &nbsp; es una secuencia de escape para colocar espacios -->
 				</font>
 			</marquee>
 		</p>
 	</footer>
-
 </html>
