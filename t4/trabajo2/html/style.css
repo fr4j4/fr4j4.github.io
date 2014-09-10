@@ -1,0 +1,12 @@
+body{
+	background-color: black;
+	color:cyan;
+	text-align: center;
+	border: 2px solid;
+	font-size: 30px;
+}
+img{
+	border: 5px solid;
+	border-color: cyan;
+	border-radius: 25px;
+}
