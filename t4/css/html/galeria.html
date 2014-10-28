@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<title></title>
+</head>
+<style type="text/css">/*codigo css embebido*/
+	table,td{
+		border: solid;
+		border-color: black;
+		border-radius: 5px;
+	}
+	img{/*efectos de transicion, los saque de internet, para que el cambio no sea tan brusco*/
+		-webkit-transition: all 1s ease;
+     	-moz-transition: all 1s ease;
+		-o-transition: all 1s ease;
+      	-ms-transition: all 1s ease;
+        transition: all 1s ease;
+	}
+
+	img:hover{/*Cuando el mouse se coloque encima de una imagen pasará esto*/
+		height: 200px;
+		width: 200px;	
+		border: 5px solid #000;
+		border-color: red;
+  		border-radius: 50px;
+  		z-index: 2;
+	}
+</style>
+<body>
+	<div class="info1"><h1>Galería de fotos</h1></div>
+	<center>
+		<table  cellpadding="5" >
+			<tr>
+				<td><img src="../img/avatar1.png" width="100px" height="100px"></td>
+				<td><img src="../img/avatar1.png" width="100px" height="100px"></td>
+				<td><img src="../img/avatar1.png" width="100px" height="100px"></td>
+			</tr>
+			<tr>
+				<td><img src="../img/avatar1.png" width="100px" height="100px"></td>
+				<td><img src="../img/avatar1.png" width="100px" height="100px"></td>
+				<td><img src="../img/avatar1.png" width="100px" height="100px"></td>
+			</tr>
+			<tr>
+				<td><img src="../img/avatar1.png" width="100px" height="100px"></td>
+				<td><img src="../img/avatar1.png" width="100px" height="100px"></td>
+				<td><img src="../img/avatar1.png" width="100px" height="100px"></td>
+			</tr>
+		</table>
+	</center>
+</body>
+</html>

@@ -1,0 +1,39 @@
+html{/*esto se aplica a todo el documento*/
+	background-color: #136613;
+	font-family: "comic sans ms";
+}
+*{/*se aplica a todos los elementos*/
+	
+}
+
+a{/*Se aplica a los hipervinculos*/
+	color:white;
+	text-decoration: none;/*hipervinculos sin subrayado*/
+}
+.info1{
+	text-transform: capitalize;/*transforma el texco con primera letra mayuscula*/
+	font-weight: bold;/*letra en ngritas*/
+	border:solid;
+	border-color: black;
+	background-color: #56A856;
+	border-radius: 15px;
+	padding: 5px;
+}
+.cuadro1{
+	min-height: 50px;
+	border: solid;
+	border-radius: 15px;
+	background-color: #002900;
+	color: white;
+	border-color: black;
+	padding: 5px;
+}
+.cuadro2{
+	min-height: 50px;
+	border: solid;
+	border-radius: 15px;
+	background-color: #56A856;
+	color: white;
+	border-color: black;
+	padding: 5px;
+}
