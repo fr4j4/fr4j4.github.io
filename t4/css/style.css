@@ -32,8 +32,18 @@ a{/*Se aplica a los hipervinculos*/
 	min-height: 50px;
 	border: solid;
 	border-radius: 15px;
-	background-color: #56A856;
+	background-color: #2E862E;
 	color: white;
 	border-color: black;
 	padding: 5px;
+}
+.vineta1{
+	list-style-image: url("./img/vineta2.gif");
+
+}
+.vineta2{
+
+}
+.vineta3{
+
 }
