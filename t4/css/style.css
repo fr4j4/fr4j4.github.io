@@ -10,6 +10,9 @@ a{/*Se aplica a los hipervinculos*/
 	color:white;
 	text-decoration: none;/*hipervinculos sin subrayado*/
 }
+img{
+	border-radius: 10px;
+}
 .info1{
 	text-transform: capitalize;/*transforma el texco con primera letra mayuscula*/
 	font-weight: bold;/*letra en ngritas*/
