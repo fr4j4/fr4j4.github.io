@@ -14,11 +14,9 @@ img{
 	border-radius: 10px;
 }
 .info1{
-<<<<<<< HEAD
 	text-transform: capitalize;/*transforma el texto con primera letra mayuscula*/
 =======
 	text-transform: capitalize;/*transforma el texco con primera letra mayuscula*/
->>>>>>> origin/master
 	font-weight: bold;/*letra en ngritas*/
 	border:solid;
 	border-color: black;
@@ -49,12 +47,5 @@ img{
 
 }
 .vineta2{
-<<<<<<< HEAD
 	list-style-image: url("./img/flecha.png");
-=======
-
-}
-.vineta3{
-
->>>>>>> origin/master
 }
