@@ -1,0 +1,233 @@
+<html>
+	<head>
+		<title>Crear grupo en Raidcall</title>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<style type="text/css">
+			#comienzo {
+				position: absolute;
+				z-index: 399999;
+				visibility: visible;
+				top: 40px;
+				left: 860px;
+				width: 60px;
+				height: 60px;
+			}
+			#cursor {
+				position: absolute;
+				z-index: 400000;
+				visibility: hidden;
+				top: 0px;
+				left: 0px;
+			}
+			#pic01 { 
+				position: absolute;
+				z-index: 0;
+				visibility: visible;
+				top: 40px;
+				left: 40px;
+			}
+			#pic02 { 
+				position: absolute;
+				z-index: 1;
+				visibility: hidden;
+				top: 40px;
+				left: 40px;
+			}
+			#pic03 { 
+				position: absolute;
+				z-index: 2;
+				visibility: hidden;
+				top: 40px;
+				left: 40px;
+			}
+			#pic04 { 
+				position: absolute;
+				z-index: 3;
+				visibility: hidden;
+				top: 40px;
+				left: 40px;
+			}
+			#pic05 { 
+				position: absolute;
+				z-index: 4;
+				visibility: hidden;
+				top: 40px;
+				left: 40px;
+			}
+			#pic06 { 
+				position: absolute;
+				z-index: 5;
+				visibility: hidden;
+				top: 40px;
+				left: 40px;
+			}
+			#pic07 { 
+				position: absolute;
+				z-index: 6;
+				visibility: hidden;
+				top: 40px;
+				left: 40px;
+			}
+			#pic08 { 
+				position: absolute;
+				z-index: 7;
+				visibility: hidden;
+				top: 40px;
+				left: 40px;
+			}
+			#pic09 { 
+				position: absolute;
+				z-index: 8;
+				visibility: hidden;
+				top: 40px;
+				left: 40px;
+			}
+			#pic10 { 
+				position: absolute;
+				z-index: 9;
+				visibility: hidden;
+				top: 40px;
+				left: 40px;
+			}
+			#pic11 { 
+				position: absolute;
+				z-index: 10;
+				visibility: hidden;
+				top: 40px;
+				left: 40px;
+			}
+		</style>
+		<script type="text/javascript">
+			/*function pause(ms)
+			{
+				var date = new Date();
+				var curDate = null;
+				do { curDate = new Date(); }
+				while(curDate-date < ms);
+			}*/ // Gasta mucha memoria D:, usar setTimeout
+			function start()
+			{
+				comienzo.style.visibility = "hidden"
+				curs = cursor.style
+				curs.visibility = "visible"
+				curs.xpos = parseInt(0)
+				curs.ypos = parseInt(0)
+				curs.xinc = 1
+				curs.yinc = 1
+				curs.count = 0
+				click1();
+			}
+			function click1(){
+				if(curs.count < 100){
+					if(curs.xpos < 156) { curs.xpos += 2}
+					if(curs.ypos < 575) { curs.ypos += 6}
+					curs.left = curs.xpos
+					curs.top = curs.ypos
+					curs.count += 1
+					setTimeout("click1()",25)
+				}
+				else{
+					curs.count = 0
+					setTimeout("click2()",500)
+					pic02.style.visibility = "visible"
+				}
+			}
+			function click2(){
+				if(curs.count < 100){
+					if(curs.xpos < 440) { curs.xpos += 3}
+					if(356 < curs.ypos) { curs.ypos -= 3}
+					curs.left = curs.xpos
+					curs.top = curs.ypos
+					curs.count += 1
+					setTimeout("click2()",15)
+				}
+				else{
+					curs.count = 0
+					setTimeout("click3()",500)
+					pic03.style.visibility = "visible"
+				}
+			}
+			function click3(){
+				if(curs.count < 100){
+					if(285 < curs.xpos) { curs.xpos -= 2}
+					if(310 < curs.ypos) { curs.ypos -= 1}
+					curs.left = curs.xpos
+					curs.top = curs.ypos
+					curs.count += 1
+					setTimeout("click3()",10)
+				}
+				else{
+					curs.count = 0
+					setTimeout("click4()",500)
+					pic04.style.visibility = "visible"
+				}
+			}
+			function click4(){
+				if(curs.count < 100){
+					if(curs.xpos < 580) { curs.xpos += 3}
+					if(280 < curs.ypos) { curs.ypos -= 1}
+					curs.left = curs.xpos
+					curs.top = curs.ypos
+					curs.count += 1
+					setTimeout("click4()",10)
+				}
+				else{
+					curs.count = 0
+					setTimeout("click5()",500)
+					pic05.style.visibility = "visible"
+				}
+			}
+			function click5(){
+				if(curs.count < 100){
+					if(527 < curs.xpos) { curs.xpos -= 1}
+					if(curs.ypos < 537) { curs.ypos += 3}
+					curs.left = curs.xpos
+					curs.top = curs.ypos
+					curs.count += 1
+					setTimeout("click5()",10)
+				}
+				else{
+					curs.count = 0
+					setTimeout("click6()",2000)
+					pic06.style.visibility = "visible"
+				}
+			}
+			function click6(){
+				setTimeout("click7()",3000)
+				pic07.style.visibility = "visible"
+			}
+			function click7(){
+				setTimeout("click8()",3000)
+				pic08.style.visibility = "visible"
+			}
+			function click8(){
+				setTimeout("click9()",5000)
+				pic09.style.visibility = "visible"
+			}
+			function click9(){
+				setTimeout("click10()",5000)
+				pic10.style.visibility = "visible"
+				curs.visibility = "hidden"
+			}
+			function click10(){
+				pic11.style.visibility = "visible"
+			}
+		</script>
+			<link rel="stylesheet" href="../.././css/estilo.css"> <!---Enlazar una hoja de estilos (2 carpetas "arriba") -->
+	</head>
+	<body>
+		<img id="cursor" src="img/cursor.png" />
+		<img id="pic01" src="img/01.jpg" />
+		<img id="pic02" src="img/02.jpg" />
+		<img id="pic03" src="img/03.jpg" />
+		<img id="pic04" src="img/04.jpg" />
+		<img id="pic05" src="img/05.jpg" />
+		<img id="pic06" src="img/06.jpg" />
+		<img id="pic07" src="img/07.jpg" />
+		<img id="pic08" src="img/08.jpg" />
+		<img id="pic09" src="img/09.jpg" />
+		<img id="pic10" src="img/10.jpg" />
+		<img id="pic11" src="img/11.jpg" />
+		<img id="comienzo" src="img/start.png" onClick="start()" />
+	</body>
+</html>
