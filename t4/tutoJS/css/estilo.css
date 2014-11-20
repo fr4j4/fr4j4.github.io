@@ -1,4 +1,11 @@
+*{
+	color:white;
+	font-family: "Comic Sans MS";
+}
 body{
 	background-color: #3A81AF;
-	*overflow: hidden;
+	overflow: hidden;
+}
+a{
+	text-decoration: none;
 }
