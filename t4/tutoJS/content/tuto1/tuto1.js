@@ -82,10 +82,10 @@ function f3(){
 		}
 	}
 		if(inRange(parseInt(mouse.left),899,901)==true&&inRange(parseInt(mouse.top),299,301)==true){
-			//alert("fin paso 3");
 			funct="f4()";
 			img[3].style.visibility="hidden";
 			img[4].style.visibility="visible";
+
 	}
 	//document.write(mouse.top+"<br>");
 	setTimeout(funct,1);
