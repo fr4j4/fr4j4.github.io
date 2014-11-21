@@ -1,6 +1,7 @@
 *{
 	color:white;
 	font-family: "Comic Sans MS";
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 body{
 	background-color: #3A81AF;
@@ -8,4 +9,17 @@ body{
 }
 a{
 	text-decoration: none;
+}
+.link{
+	font-size: 20px;
+	padding: 5px;
+	border-radius: 10px;
+	border: solid black 4px;
+	background-color: rgba(255,255,255,0.3);
+}
+.menu{
+	padding: 10px;
+	position: absolute;
+	text-align: center;
+	left: 0px;
 }

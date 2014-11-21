@@ -5,8 +5,8 @@ var playing=false;
 var funct="f1()";
 function inicio(){
 	mouse=cursor.style;
-	mouse.top="500px";
-	mouse.left="500px";
+	mouse.top="0px";
+	mouse.left="0px";
 	mouse.visibility="hidden";
 		for(i=0;i<7;i++){
 			img[i].style.visibility = "hidden";
@@ -29,22 +29,22 @@ function play(){
 }
 
 function f1(){
-	if(parseInt(mouse.left)!=723||parseInt(mouse.top)!=84){
-		if(parseInt(mouse.top)>84){
+	if(parseInt(mouse.left)!=715||parseInt(mouse.top)!=110){
+		if(parseInt(mouse.top)>110){
 			mouse.top=parseInt(mouse.top)-2+'px';
 		}
-		else if(parseInt(mouse.top)<84){
+		else if(parseInt(mouse.top)<110){
 			mouse.top=parseInt(mouse.top)+2+'px';
 		}
 		
-		if(parseInt(mouse.left)<723){
+		if(parseInt(mouse.left)<710){
 			mouse.left=parseInt(mouse.left)+1+'px';
 		}
-		else if(parseInt(mouse.left)>723){
+		else if(parseInt(mouse.left)>710){
 			mouse.left=parseInt(mouse.left)-1+'px';	
 		}
 	}
-	if(inRange(parseInt(mouse.left),722,724)==true&&inRange(parseInt(mouse.top),83,85)==true){
+	if(inRange(parseInt(mouse.left),709,711)==true&&inRange(parseInt(mouse.top),109,111)==true){
 		//alert(mouse.top);
 		funct="f2()";
 		img[0].style.visibility="hidden";
@@ -55,7 +55,7 @@ function f1(){
 }
 
 function f2(){
-	if(parseInt(mouse.top)!=214||parseInt(mouse.left)<800){
+	if(parseInt(mouse.top)<230||parseInt(mouse.left)<800){
 		if(parseInt(mouse.top)<230){
 		mouse.top=parseInt(mouse.top)+1+'px';
 		}
@@ -63,7 +63,7 @@ function f2(){
 			mouse.left=parseInt(mouse.left)+1+'px';
 		}
 	}
-	if(inRange(parseInt(mouse.left),799,801)==true&&inRange(parseInt(mouse.top),213,215)==true){
+	if(inRange(parseInt(mouse.left),799,801)==true&&inRange(parseInt(mouse.top),229,231)==true){
 		//alert("fin paso 2");
 		funct="f3()";
 		img[1].style.visibility="hidden";
@@ -73,15 +73,15 @@ function f2(){
 	setTimeout(funct,1);
 }
 function f3(){
-	if(parseInt(mouse.top)<281||parseInt(mouse.left)<900){
-		if(parseInt(mouse.top)<281){
+	if(parseInt(mouse.top)<300||parseInt(mouse.left)<900){
+		if(parseInt(mouse.top)<300){
 		mouse.top=parseInt(mouse.top)+1+'px';
 		}
 		if(parseInt(mouse.left)<900){
 			mouse.left=parseInt(mouse.left)+1+'px';
 		}
 	}
-		if(inRange(parseInt(mouse.left),899,901)==true&&inRange(parseInt(mouse.top),280,282)==true){
+		if(inRange(parseInt(mouse.left),899,901)==true&&inRange(parseInt(mouse.top),299,301)==true){
 			//alert("fin paso 3");
 			funct="f4()";
 			img[3].style.visibility="hidden";
@@ -94,15 +94,15 @@ function f3(){
 
 
 function f4(){
-	if(parseInt(mouse.top)<440||parseInt(mouse.left)!=450){
-		if(parseInt(mouse.top)<440){
+	if(parseInt(mouse.top)<480||parseInt(mouse.left)!=450){
+		if(parseInt(mouse.top)<480){
 		mouse.top=parseInt(mouse.top)+2+'px';
 		}
 		if(parseInt(mouse.left)>450){
 			mouse.left=parseInt(mouse.left)-2+'px';
 		}
 	}
-	if(inRange(parseInt(mouse.left),449,451)==true&&inRange(parseInt(mouse.top),439,441)==true){
+	if(inRange(parseInt(mouse.left),449,451)==true&&inRange(parseInt(mouse.top),479,481)==true){
 		//alert("fin paso 4");
 		funct="f5()";
 		img[4].style.visibility="hidden";
