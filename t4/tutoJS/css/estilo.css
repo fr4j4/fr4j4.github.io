@@ -7,6 +7,7 @@ body{
 	background-color: #3A81AF;
 	color:#FFFA8C;
 	overflow: hidden;
+
 }
 a{
 	text-decoration: none;
@@ -24,4 +25,7 @@ a{
 	position: absolute;
 	text-align: center;
 	left: 0px;
+}
+::-webkit-scrollbar { /*ocultar barra de scroll (solo en chrome funciona)*/
+    display: none; 
 }
