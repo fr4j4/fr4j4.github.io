@@ -1,0 +1,26 @@
+﻿*{	
+	font-family: "Impact";	
+}
+body{
+	background-color: #5B8BEE;
+	color:white;
+	overflow: hidden;
+
+}
+a{
+	text-decoration: none;
+	color:white;
+}
+.links{
+	font-size: 20px;
+	padding: 5px;
+	border-radius: 10px;
+	border: solid orange 4px;
+	background-color: #5356D7;
+}
+.menu{
+	padding: 10px;
+	position: absolute;
+	text-align: center;
+	left: 0px;
+}
