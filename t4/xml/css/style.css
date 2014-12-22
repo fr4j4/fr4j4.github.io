@@ -1,0 +1,28 @@
+body{
+	background-color: black;
+}
+.cuadro{
+	background-size:100%;
+    background-image: url(".././img/textbox.gif");
+    background-repeat: no-repeat;
+	font-size: 20px;
+	max-width: 100%;
+}
+.item{
+	color:green;
+}
+
+#titulo{
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	color: red;
+}
+.c{
+	color:blue;
+	//border: solid pink 1px;
+}
+.img{
+	width: 100px;
+	text-align: center;
+}

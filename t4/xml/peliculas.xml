@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE raiz SYSTEM "datos.dtd">
+<raiz>
+<pelicula>
+	<director>James Wan</director>
+	<titulo>Dead Silence</titulo>
+	<guionista>Leigh Whannell</guionista>
+	<duracion>89</duracion>
+	<agno>2007</agno>
+	<genero>Thriller terror</genero>
+	<imagen>./img/foto1.jpg</imagen>
+</pelicula>
+
+<pelicula>
+	<director>Michel Gondry</director>
+	<titulo>Eternal Sunshine of the Spotless Mind</titulo>
+	<guionista>Charlie Kaufman</guionista>
+	<duracion>108</duracion>
+	<agno>2004</agno>
+	<genero>Drama</genero>
+	<imagen>./img/foto2.jpg</imagen>
+</pelicula>
+
+<pelicula>
+	<director>Martin Scorserse</director>
+	<titulo>Shutter Island</titulo>
+	<guionista>Laeta Kalogridis</guionista>
+	<duracion>138</duracion>
+	<agno>2010</agno>
+	<genero>Thriller terror</genero>
+	<imagen>./img/foto3.jpg</imagen>
+</pelicula>
+
+<pelicula>
+	<director>Gore Verbisnki</director>
+	<titulo>The Ring</titulo>
+	<guionista>Ehren Kruger</guionista>
+	<duracion>115</duracion>
+	<agno>2002</agno>
+	<genero>Thriller terror</genero>
+	<imagen>./img/foto4.jpg</imagen>
+</pelicula>
+
+<pelicula>
+	<director>Todd Phillips</director>
+	<titulo>The Hangover</titulo>
+	<guionista>Jon Lucas</guionista>
+	<duracion>100</duracion>
+	<agno>2009</agno>
+	<genero>Comedia</genero>
+	<imagen>./img/foto5.jpg</imagen>
+</pelicula>
+
+<pelicula>
+	<director>Mark Osborne</director>
+	<titulo>Kung fu Panda</titulo>
+	<guionista>Jonathan Aibel</guionista>
+	<duracion>90</duracion>
+	<agno>2008</agno>
+	<genero>Aventura</genero>
+	<imagen>./img/foto6.jpg</imagen>
+</pelicula>
+
+<pelicula>
+	<director>Joss Whedon</director>
+	<titulo>Avengers</titulo>
+	<guionista>Zak Penn</guionista>
+	<duracion>143</duracion>
+	<agno>2012</agno>
+	<genero>Accion</genero>
+	<imagen>./img/foto7.jpg</imagen>
+</pelicula>
+
+<pelicula>
+	<director>Gore Verbinski</director>
+	<titulo>Piratas del Caribe</titulo>
+	<guionista>Jay Wolpert</guionista>
+	<duracion>90</duracion>
+	<agno>2003</agno>
+	<genero>Aventura</genero>
+	<imagen>./img/foto8.jpg</imagen>
+</pelicula>
+
+<pelicula>
+	<director>Christopher Nolan</director>
+	<titulo>Interestelar</titulo>
+	<guionista>Christopher Nolan</guionista>
+	<duracion>169</duracion>
+	<agno>2014</agno>
+	<genero>Aventura</genero>
+	<imagen>./img/inter.jpg</imagen>
+</pelicula>
+
+<pelicula>
+	<director>Francis Ford Coppola</director>
+	<titulo>El Padrino</titulo>
+	<guionista>Francis Ford Coppola</guionista>
+	<duracion>175</duracion>
+	<agno>1972</agno>
+	<genero>Drama</genero>
+	<imagen>./img/god.jpg</imagen>
+</pelicula>
+
+<pelicula>
+	<director>Akira Kurosawa</director>
+	<titulo>Los siete samurais</titulo>
+	<guionista>Akira Kurosawa</guionista>
+	<duracion>207</duracion>
+	<agno>1954</agno>
+	<genero>Drama</genero>
+	<imagen>./img/7samurai.jpg</imagen>
+</pelicula>
+
+<pelicula>
+	<director>Roberto Benigni</director>
+	<titulo>La vida es bella</titulo>
+	<guionista>Roberto Benigni</guionista>
+	<duracion>116</duracion>
+	<agno>1997</agno>
+	<genero>Drama</genero>
+	<imagen>./img/vida.jpg</imagen>
+</pelicula>
+
+</raiz>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>XML-PELICULAS</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script type="text/javascript">
+		var cols=3;
+		var pelis=0;
+		var xmlDoc=loadXMLDoc("peliculas.xml"); 
+		var titulos=xmlDoc.getElementsByTagName("titulo");
+		var guionistas=xmlDoc.getElementsByTagName("guionista");
+		var duracion=xmlDoc.getElementsByTagName("duracion");
+		var agnos=xmlDoc.getElementsByTagName("agno");
+		var generos=xmlDoc.getElementsByTagName("genero");
+		var director=xmlDoc.getElementsByTagName("director");
+		var img=xmlDoc.getElementsByTagName("imagen");
+		var seleccion=[];
+		var pelis=titulos.length;
+
+		var tit=getValue("titulo").replace(/\+/g," ");
+		var ag=getValue("agn");
+		var dir=getValue("director").replace(/\+/g," ");
+		var gen=getValue("genero").replace(/\+/g," ");
+		
+
+		//alert("*"+tit+"*"+ag+"*"+dir+"*"+gen+"*");
+		//alert("*"+titulos[1].childNodes[0].nodeValue+"*");
+		filtra(tit,gen,ag,dir);
+		//alert(seleccion);
+		
+
+
+		function getValue(key){
+			var a=location.search;
+			var n=a.substring(a.indexOf(key+"=")+key.length+1);
+			if(key!="genero"){
+				n=n.substring(0,n.indexOf("&"));
+			}
+			return n;
+		}
+
+		function filtra(titulo,genero,agno,dir){
+			for(i=0;i<pelis;i++){
+				if(titulo==""&&genero==""&&dir==""&&agno=="0"){
+					seleccion.push(i);
+				}else{
+					if(titulo!=""&&genero==""&&dir==""&&agno=="0"){//si solo se ingresa el titulo
+						if(titulo==titulos[i].childNodes[0].nodeValue){
+							seleccion.push(i);
+						}
+					}
+					else if(dir!=""&&titulo==""&&genero==""&&agno=="0"){
+						if(dir==director[i].childNodes[0].nodeValue){
+							seleccion.push(i);
+						}
+					}
+					else if(dir==""&&titulo==""&&genero!=""&&agno=="0"){
+						if(genero==generos[i].childNodes[0].nodeValue){
+							seleccion.push(i);
+						}
+					}
+					else if(dir==""&&titulo==""&&genero==""&&agno!="0"){
+						if(agno==agnos[i].childNodes[0].nodeValue){
+							seleccion.push(i);
+						}
+					}
+					//else{
+						//combinaciones con titulo
+						if(titulo!=""&&genero!=""&&dir==""&&agno=="0"){
+							if(titulo==titulos[i].childNodes[0].nodeValue&&genero==generos[i].childNodes[0].nodeValue){
+								seleccion.push(i);
+							}
+						}
+						if(titulo!=""&&genero==""&&dir!=""&&agno=="0"){
+							if(titulo==titulos[i].childNodes[0].nodeValue&&dir==director[i].childNodes[0].nodeValue){
+								seleccion.push(i);
+							}
+						}
+						if(titulo!=""&&genero==""&&dir==""&&agno!="0"){
+							if(titulo==titulos[i].childNodes[0].nodeValue&&agno==agnos[i].childNodes[0].nodeValue){
+								seleccion.push(i);
+							}
+						}
+						//combinaciones con años
+						if(titulo==""&&genero!=""&&dir==""&&agno!="0"){
+							if(agno==agnos[i].childNodes[0].nodeValue&&genero==generos[i].childNodes[0].nodeValue){
+								seleccion.push(i);
+							}
+						}
+						if(titulo==""&&genero==""&&dir!=""&&agno!="0"){
+							if(agno==agnos[i].childNodes[0].nodeValue&&dir==director[i].childNodes[0].nodeValue){
+								seleccion.push(i);
+							}
+						}
+						if(titulo==""&&genero!=""&&dir!=""&&agno=="0"){
+							if(dir==director[i].childNodes[0].nodeValue&&genero==generos[i].childNodes[0].nodeValue){
+								seleccion.push(i);
+							}
+						}
+					//}
+				}
+			}
+
+			
+		}
+
+		
+
+		//===metodos===
+		function despliega(){
+			document.write('<table border="0" style="width:100%;">');
+			var i=0;
+			for(f=0;f<(titulos.length/cols);f++){
+				document.write('<tr>');
+				for(c=0;c<cols;c++){
+					if(i<pelis){
+						for(aux=0;aux<seleccion.length;aux++){
+							if(i==seleccion[aux]){
+
+							
+						document.write('<td class="cuadro">');
+						document.write('<center>');
+						document.write('<table border="0"');
+							document.write('<tr>');
+								document.write('<td colspan="2">');
+								document.write('<div class="item" id="titulo">');
+								document.write(titulos[i].childNodes[0].nodeValue);
+								document.write('</td>');	
+							document.write('</tr>');
+							document.write('<tr>');
+								document.write('<td width="'+(75)+'%">');
+								document.write('Genero:');
+									document.write('<span class="item"> ');
+								document.write(generos[i].childNodes[0].nodeValue+'<br>');
+									document.write('</span>');
+								document.write('Año:');
+									document.write('<span class="item"> ');
+								document.write(agnos[i].childNodes[0].nodeValue+'<br>');
+									document.write('</span>');
+								document.write('Director:');
+									document.write('<span class="item"> ');
+								document.write(director[i].childNodes[0].nodeValue+'<br>');
+									document.write('</span>');
+								document.write('Guion:');
+									document.write('<span class="item"> ');
+								document.write(guionistas[i].childNodes[0].nodeValue+'<br>');
+									document.write('</span>');
+								document.write('Director:');
+									document.write('<span class="item"> ');
+								document.write(director[i].childNodes[0].nodeValue+'<br>');
+									document.write('</span>');
+								document.write('Duracion:');
+									document.write('<span class="item"> ');
+								document.write(duracion[i].childNodes[0].nodeValue+' min.<br>');
+									document.write('</span');
+								document.write('</td>');
+									
+								document.write('<td>');
+								document.write('<img class="img" src="'+img[i].childNodes[0].nodeValue+'">');
+								document.write('<br></td>');
+							document.write('</tr>');
+						document.write('</table>');
+						document.write('</center>');
+					}
+
+					}///////khjsakfdhaioe
+						}
+					document.write('</td>');
+					i++;
+				}
+				document.write('</tr>');			
+			}
+			document.write('</table>');
+			
+		}
+	
+		function loadXMLDoc(filename){
+		if (window.XMLHttpRequest)
+		  {
+		  xhttp=new XMLHttpRequest();
+		  }
+		else // code for IE5 and IE6
+		  {
+		  xhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		  }
+		xhttp.open("GET",filename,false);
+		xhttp.send();
+		return xhttp.responseXML;
+}
+	</script>
+</head>
+<header>
+	<form action="index.html" name="form1" method="GET" style="color:white;">
+	<table>
+		<tr>
+			<td>
+			Título: <input type="text" name="titulo" size="50">
+			 &nbsp;&nbsp;&nbsp;&nbsp;
+			Año:<SELECT NAME="agn" >
+			<script type="text/javascript">
+				document.write('<OPTION VALUE="'+0+'">'+'---'+'</OPTION>');
+				for(i=2015;i>0;i--){
+					for(j=0;j<agnos.length;j++){
+						if(i==parseInt(agnos[j].childNodes[0].nodeValue)){
+							document.write('<OPTION VALUE="'+i+'">'+i+'</OPTION>');
+						}
+					}
+					
+				}
+			</script>
+			</SELECT>
+			&nbsp;
+			Director: <input type="text" name="director" size="50">
+			
+			
+			</td>
+			<td rowspan="2">
+				<input type="submit" name="envia" value="FILTRAR!">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Genero: <input type="radio" name="genero" value="comedia">Comedia
+				<input type="radio" name="genero" value="Drama">Drama
+				<input type="radio" name="genero" value="Sci-fi">Sci-fi&nbsp;&nbsp;
+				<input type="radio" name="genero" value="Thriller terror">thriller terror<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="radio" name="genero" value="" checked="true">Todas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="radio" name="genero" value="Accion">acción
+				<input type="radio" name="genero" value="Aventura">aventura
+			</td>
+		</tr>
+	</table>
+</form>
+<br>
+</header>
+<body>
+<script type="text/javascript">
+	despliega();
+</script>
+</body>
+</html>

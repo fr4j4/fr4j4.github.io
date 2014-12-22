@@ -1,0 +1,6 @@
+<?xml encoding="UTF-8"?>
+<!ELEMENT raiz (pelicula)+>
+<!ELEMENT pelicula (titulo, genero,agno)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT genero (#PCDATA)>
+<!ELEMENT agno (#PCDATA)>
