@@ -7,8 +7,18 @@
 	<script type="text/javascript">
 	var cols=["#05349E","#E42200","#EE3A23","#B5DC10","#7FC31C"];
 	var nameCols=["Digital Frost","Jeunesse","Viva","Apple Grow","Gardener"]
-	var contents1_2015=["Ayudantía 1","Ayudantía 2","Ayudantía 3","Ayudantía 4"];
+
+	var contents1_2015=["Ayudantía 1","Ayudantía 2","_","_"];
 	var contentLinks1_2015=["./documents/ayu1.pdf","./documents/ayu2.pdf","./documents/ayu3.pdf","./documents/ayu4.pdf"];
+
+	var contents2_2014=["Ayudantía 1","Ayudantía 2","Ayudantía 3","Ayudantía 4","Ayudantía 5","Ayudantía 6","Ayudantía 7"];
+	var contentLinks2_2014=["./documents/2_2014/ayu1.pdf","./documents/2_2014/ayu2.pdf","./documents/2_2014/ayu3.pdf","./documents/2_2014/ayu4.pdf","./documents/2_2014/ayu5.pdf","./documents/2_2014/ayu6.pdf","./documents/2_2014/ayu7.pdf"];
+
+	var contents1_2014=["Ayudantía 1","Ayudantía 2","Ayudantía 3","_"];
+	var contentLinks1_2014=["./documents/1_2014/ayu1.pdf","./documents/1_2014/ayu2.pdf","./documents/1_2014/ayu3.pdf","./documents/1_2014/ayu4.pdf"];
+
+
+
 	var cuadro1=null;
 	function bgColor(color){
 		document.body.style.background=color;
@@ -40,7 +50,26 @@
 	
 	<center>
 		<table>
+			<tr><td colspan="100%"><div id="cuadro2" class="txt">Ejercicios</div></td></tr>
 			<tr>
+				<td><div id="cuadro2" style="padding:10px;"><div class="txt">SEM1-2014
+					<script type="text/javascript">
+						document.write("<ul>");
+						for(i=0;i<contents1_2014.length;i++){
+							document.write("<li style=\"list-style-type: none;color:#00FF00;\"><a href="+contentLinks1_2014[i]+">"+contents1_2014[i]+"</a></li>");
+						}
+						document.write("<ul>");
+					</script>
+				</div></div></td>
+				<td><div id="cuadro2" style="padding:10px;"><div class="txt">SEM2-2014
+					<script type="text/javascript">
+						document.write("<ul>");
+						for(i=0;i<contents2_2014.length;i++){
+							document.write("<li style=\"list-style-type: none;color:#00FF00;\"><a href="+contentLinks2_2014[i]+">"+contents2_2014[i]+"</a></li>");
+						}
+						document.write("<ul>");
+					</script>
+				</div></div></td>
 				<td><div id="cuadro2" style="padding:10px;"><div class="txt">SEM1-2015
 					<script type="text/javascript">
 						document.write("<ul>");
@@ -51,8 +80,8 @@
 					</script>
 				</div></div></td>
 			</tr>
-			<tr>
-				<td><a href=""><div id="cuadro2" style=""><div class="txt">Asistencia 2015</div></div></a></td>
+			<tr><td></td><td></td>
+				<td><a href=""><div id="cuadro2" style=""><div class="txt">Asistencia</div></div></a></td>
 			</tr>
 		</table>
 	</center>
