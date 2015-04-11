@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>INFO023 - PDF</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Ayudantia - INFO023</title>
 	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-INFO023 - PDF
-<table border="1">
-	<tr>
-		<td>Ayudantia</td>
-		<td>PDF</td>
-	</tr>
+	<script type="text/javascript">
+	var cols=["#05349E","#E42200","#EE3A23","#B5DC10","#7FC31C"];
+	var nameCols=["Digital Frost","Jeunesse","Viva","Apple Grow","Gardener"]
+	var cuadro1=null;
+	function bgColor(color){
+		document.body.style.background=color;
+	}
 
-	<tr>
-		<td>Ayudantia1</td>
-		<td><a href="A1.pdf" target="_blank">[1]</a></td>
-	</tr>
-	<tr>
-		<td>Ayudantia2</td>
-		<td><a href="A2.pdf" target="_blank">[1]</a>&nbsp;&nbsp;<a href="A2-2.pdf" target="_blank">[2]</a></td>
-	</tr>
-	<tr>
-		<td>Ayudantia3</td>
-		<td><a href="A3.pdf" target="_blank"	>[1]</a></td>
-	</tr>
-	<tr>
-		<td>Ayudantia4</td>
-		<td><a href="A4.pdf" target="_blank"	>[1]</a></td>
-	</tr>
-	<tr>
-		<td>Ayudantia5</td>
-		<td><a href="A5.pdf" target="_blank"	>[1]</a></td>
-	</tr>
-	<tr>
-		<td>Ayudantia6</td>
-		<td><a href="A6.pdf" target="_blank"	>[1]</a></td>
-	</tr>
-	<tr>
-		<td>Ayudantia7</td>
-		<td><a href="A71.pdf" target="_blank"	>[1]</a>
-		<a href="A74.pdf" target="_blank"	>[2]</a>
-		<a href="A73.pdf" target="_blank"	>[3]</a>
-		<a href="A72.pdf" target="_blank"	>[4]</a></td>
-	</tr>
-	<tr>
-		<td>Switch y do while</td>
-		<td><a href="switch.pdf" target="_blank"	>[1]</a></td>
-	</tr>
-</table>
-<a href="http://1drv.ms/VR1Fdf" target="_blank">Ver asistencia</a>
+	function inverse(hex) {
+		var inverse = null;
+		if (hex.length == 7 && hex.indexOf('#') == 0) {
+		inverse = '#';
+			for (var i = 1; i < 7; i += 2) {
+			  var value = "0" + (255 - parseInt(hex.substring(i, i + 2), 16)).toString(16);
+			  inverse += value.slice(-2);
+			}
+		}
+		return inverse
+	}
+
+	</script>
+
+</head>
+<body id="body">
+	<div id="cuadro1">Material de Ayudantías [Programación - INFO023]</div>
+	<marquee id="brick"behavior="scroll" direction="left" scrollamount="10" scrolldelay="80" truespeed="true">
+		[11/04/2015] : Agregando cosas a la página, por ahora estan disponibles las ayudantías de los semestres anteriores.
+		Trabajando para que esté listo este fin de semana.
+	</marquee>
+	<script type="text/javascript">
+		//bgColor(cols[0]);
+		cuadro1=document.getElementById("cuadro1")
+		cuadro1.style.background=cols[3];
+	</script>
 </body>
+<footer>
+	<script type="text/javascript">
+			document.write("<table style=\"float:left;\">");
+			document.write("<tr><td><div class=\"txt\">Paleta de colores:</div></td>")
+			for(i=0;i<cols.length;i++){
+				document.write("<td style=\"font-size:20px;color:"+inverse(cols[i])+";border:solid black 3px;background-color:"+cols[i]+"\">");
+				document.write(nameCols[i]);
+				document.write("</td>");
+			}
+			document.write("</tr>");
+			document.write("</table>");
+			document.write("<div class=\"txt\" style=\"float:right\">2015 - Francisco González</div>");
+	</script>
+</footer>
 </html>
