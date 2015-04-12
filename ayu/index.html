@@ -5,6 +5,7 @@
 	<title>Ayudantia - INFO023</title>
 	<link rel="stylesheet" href="style.css">
 	<script type="text/javascript">
+	var walls=4;
 	var cols=["#05349E","#E42200","#EE3A23","#B5DC10","#7FC31C"];
 	var nameCols=["Digital Frost","Jeunesse","Viva","Apple Grow","Gardener"]
 
@@ -57,9 +58,10 @@
 				<td><div id="cuadro2" style="padding:10px;"><div class="txt">SEM1-2014
 
 					<script type="text/javascript">
-						var b=parseInt(Math.random()*4,10)+1;
+						
+						var b=parseInt(Math.random()*walls,10)+1;
 						var fondo = document.getElementsByClassName("background-image")[0];
-						fondo.style.background="url(\"./res/bg/wall"+b+".jpg\")";
+						fondo.style.background="url(\"./res/bg/wall"+b+".jpg\") repeat 100% center";
 						document.write("<ul>");
 						for(i=0;i<contents1_2014.length;i++){
 							if(contents1_2014[i]!="&nbsp;"){
