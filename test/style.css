@@ -2,12 +2,12 @@ html,body{
 	height: 100%
 }
 html{
-	background-color: cyan;
+	background-color: inherit;
 }
 body{
 	height: 96%;
-	border:solid yellow 5px;
-	background-color: green;
+	border:solid silver 5px;
+	background-color: black;
 }
 .box1{
 	position: relative;
