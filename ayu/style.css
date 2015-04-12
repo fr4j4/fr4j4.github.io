@@ -78,13 +78,15 @@ a{
 	border:solid black 5px;
 	border-radius: 15px;
 	text-align:center
+
 }
 
 #cuadro2{
+	
 	color:white;
 	text-align: center;
 	padding: 3px;
-	background-color: #05349E;
+	background-color: rgba(5, 52, 158, .27);
 	font-size: 15px;
 	font-weight: bolder;
 	border:solid black 5px;
