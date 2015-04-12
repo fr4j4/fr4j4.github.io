@@ -56,12 +56,12 @@ a{
 	font-size: 15px;
 	font-family: 'brick';
 	font-weight: bold;
-	color: #00FF00;
+	color: #5AA364;
 	background-color: black;
 	border:solid silver;
 	border-radius: 15px;
 
-	-webkit-filter:  grayscale(70%);
+	/*-webkit-filter:  grayscale(70%);*/
 
 	/*
 	-webkit-filter: blur(1px);
