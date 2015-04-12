@@ -10,19 +10,18 @@ body{
 
 }
 .background-image {
-	background-image: url("./res/bg/wall3.jpg");
+	/*background-image: url("./res/bg/wall2.jpg");*/
 	position: fixed;
 	z-index: -1;
 	left: -1px;
 	top: -1px;
 	width: 100%;
 	height: 100%;
-	  
-	-webkit-filter: blur(2px);
-	-moz-filter: blur(2px);
-	-o-filter: blur(2px);
-	-ms-filter: blur(2px);
-	filter: blur(2px);
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: blur(3px);
 }
 
 .content {
