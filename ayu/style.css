@@ -44,7 +44,8 @@ a{
 	text-decoration: none;
 }
 .txt{
-	font-family: "Comic Sans MS";
+	/*font-family: "Comic Sans MS";*/
+	font-family: "brick";
 	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 #digital{
@@ -72,7 +73,7 @@ a{
 }
 #cuadro1{
 	color:white;
-	font-size: 40px;
+	font-size: 20px;
 	font-weight: bolder;
 	border:solid black 5px;
 	border-radius: 15px;
@@ -84,7 +85,7 @@ a{
 	text-align: center;
 	padding: 3px;
 	background-color: #05349E;
-	font-size: 25px;
+	font-size: 15px;
 	font-weight: bolder;
 	border:solid black 5px;
 	border-radius: 15px;
