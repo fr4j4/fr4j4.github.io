@@ -93,3 +93,8 @@ a{
 	border-radius: 15px;
 	text-align:center
 }
+
+li{
+	display:table;
+    margin:0px +30px 0px auto;
+}
