@@ -3,70 +3,42 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<link rel="stylesheet" href="style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+		<script>
+		$( document ).ready(function() {
+  			console.log( 'listo!' );
+  			var txt=$("#txt")
+		});
+		$(document).on("keydown", function (e) {
+	    	if (e.which === 8 && !$(e.target).is("input, textarea,txt")) {
+			    	e.preventDefault();
+			    	$('#txt').text($('#txt').text().substring(0,$('#txt').text().length-1));
+			    	//alert("j");
+			}
+			if(e.which === 32){
+				e.preventDefault();
+				$('#txt').text($('#txt').text()+'\u00a0')
+			}
+			//alert(e.which); '\u00a0'
+		});
+		
+	</script>
 	<title>Test</title>
 </head>
 <body>
-	<center><div id="title">Commandline</div></center>
-	
-	<script type="text/javascript">
-		var box=document.createElement('div');
-		var content=document.createElement('div');
-		var txt = document.createElement('div');
-		var bg=document.createElement('div');
-		document.body.appendChild(box);
-		box.appendChild(content);
-		box.appendChild(bg);
-		content.appendChild(txt);
-		content.className='content'
-		txt.innerHTML = "";
-		txt.id="txt";
-		bg.className="bg";
-		box.focus();
-		document.onkeydown = function(e){
-			if(e.keyCode==8){
-				txt.innerText=txt.innerText.substring(0,txt.innerText.length-1);
-			}
-			if(e.keyCode==32){
-				 txt.innerText +='\u00a0';
-			}
-			else{
-				
-			}
-		};
-		document.onkeypress = function(e) {
-						e = e || window.event;
-					    var charCode = (typeof e.which == "number") ? e.which : e.keyCode;
-					    if (charCode) {
-					    	//alert(txt.innerHtml);
-					        txt.innerText +=String.fromCharCode(charCode);
-					    }
-					};		
-	// Prevent the backspace key from navigating back.
-document.unbind('keydown').bind('keydown', function (event) {
-    var doPrevent = false;
-    if (event.keyCode === 8) {
-        var d = event.srcElement || event.target;
-        if ((d.tagName.toUpperCase() === 'INPUT' && 
-             (
-                 d.type.toUpperCase() === 'TEXT' ||
-                 d.type.toUpperCase() === 'PASSWORD' || 
-                 d.type.toUpperCase() === 'FILE' || 
-                 d.type.toUpperCase() === 'EMAIL' || 
-                 d.type.toUpperCase() === 'SEARCH' || 
-                 d.type.toUpperCase() === 'DATE' )
-             ) || 
-             d.tagName.toUpperCase() === 'TEXTAREA') {
-            doPrevent = d.readOnly || d.disabled;
-        }
-        else {
-            doPrevent = true;
-        }
-    }
-
-    if (doPrevent) {
-        event.preventDefault();
-    }
-});
+	<center><div id="title">JQuery</div></center>
+	<div class="box1">
+		<div class="content">
+			<div id="txt">
+				Hola
+			</div>
+		</div>
+	</div>
+	<script>
+		$(document).keypress(function(e) {
+			console.log(e.keyCode);
+  			$('#txt').text($('#txt').text()+String.fromCharCode(e.keyCode));
+		});
 	</script>
 </body>
 </html>

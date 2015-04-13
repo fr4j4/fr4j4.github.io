@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="style.css">
+	<title>Test</title>
+</head>
+<body>
+	<center><div id="title">Commandline</div></center>
+	
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+    		alert("hj");
+		});
+
+		var box=document.createElement('div');
+		var content=document.createElement('div');
+		var txt = document.createElement('div');
+		var bg=document.createElement('div');
+		document.body.appendChild(box);
+		box.appendChild(content);
+		box.appendChild(bg);
+		content.appendChild(txt);
+		content.className='content'
+		txt.innerHTML = "";
+		txt.id="txt";
+		bg.className="bg";
+		box.focus();
+		document.onkeydown = function(e){
+			if (navigator.userAgent.toLowerCase().indexOf("msie") == -1) {
+				e.stopPropagation();
+			}
+			if(e.keyCode==8){
+				txt.innerText=txt.innerText.substring(0,txt.innerText.length-1);
+			}
+			if(e.keyCode==32){
+				 txt.innerText +='\u00a0';
+			}
+			else{
+				
+			}
+		};
+		document.onkeypress = function(e) {
+			e = e || window.event;
+		    var charCode = (typeof e.which == "number") ? e.which : e.keyCode;
+		    if (charCode) {
+		    	//alert(txt.innerHtml);
+		        txt.innerText +=String.fromCharCode(charCode);
+		    }
+		};		
+	</script>
+</body>
+</html>

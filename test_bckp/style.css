@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'VT323'; /*a name to be used later*/
+    src: url('./fonts/VT323-Regular.ttf') format('truetype');
+}
+html{
+	height: 100%;
+	
+}
+
+body{
+	height: 95%;
+	top: 20px;
+	border:solid silver 5px;
+	background-color: black;
+}
+#title{
+	/*position: relative;*/
+	display: inline-block;
+	font-family: "VT323";
+	font-size: 25px;
+	color:white;
+	z-index=10;
+	border: double silver 10px; 
+}
+#txt{
+	font-family: "VT323";
+	font-size: 25px;
+	color:#00ff00;
+}
+.box1{
+	position: absolute;
+	/*border:solid;*/
+	width: 50%;
+	height: 100%;
+	
+}
+.box1 .content {
+      position: relative;
+      color: White;
+      z-index: 1;
+}
+.bg {
+	position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url('bg.jpg');
+    opacity: 0.5;
+    -webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: blur(3px);
+    z-index: -1;
+}
