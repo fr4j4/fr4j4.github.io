@@ -23,6 +23,8 @@ body{
 	border: double silver 10px; 
 }
 #txt{
+	height: auto;
+	display: inline-block;
 	top: 20px;
 	font-family: "VT323";
 	font-size: 25px;
