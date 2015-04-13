@@ -24,7 +24,19 @@
 			}
 			//alert(e.which);
 		});
-		
+
+		$(document).contextmenu( function() {//deshabilitar el menu del boton derecho del mouse o boton propiedades
+    		return false;
+    	});
+    	/*
+  $(document).mousedown(function(e){ 
+    if( e.button == 2 ) { 
+      //alert('Right mouse button!'); 
+      e.preventDefault();
+      return false; 
+    } 
+    return true; 
+  }); */
 	</script>
 	<title>Test</title>
 </head>
