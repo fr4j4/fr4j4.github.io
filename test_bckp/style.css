@@ -25,6 +25,10 @@ body{
 	font-family: "VT323";
 	font-size: 25px;
 	color:#00ff00;
+
+	  -o-text-overflow: clip;
+	  text-overflow: clip;
+
 }
 .box1{
 	position: absolute;
