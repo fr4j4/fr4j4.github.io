@@ -19,20 +19,20 @@
 				e.preventDefault();
 				$('#txt').text($('#txt').text()+'\u00a0')
 			}
+			if(e.which === 13){
+				//falta implementar el enter
+			}
+			//alert(e.which);
 		});
 		
 	</script>
 	<title>Test</title>
 </head>
 <body>
+<div class="bg"></div>
 	<center><div id="title">JQuery</div></center>
 	<div class="box1">
-		<div class="content">
-			<div class="bg"></div>
-			<div id="txt">
-				
-			</div>
-		</div>
+		<div id="txt"></div>
 	</div>
 	<script>
 		$(document).keypress(function(e) {
