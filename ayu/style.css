@@ -75,7 +75,7 @@ a:hover{
 	font-size: 15px;
 	font-weight: bolder;
 	border:solid black 5px;
-	border-radius: 15px;
+	/*border-radius: 15px;*/
 	text-align:center
 
 }
@@ -92,6 +92,7 @@ a:hover{
 	border-radius: 15px;
 	text-align:center
 }
+
 
 li{
 	display:table;
