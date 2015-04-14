@@ -47,7 +47,9 @@ a{
 }
 a:hover{
 	color:#00FFFF;
+	cursor: default;
 }
+
 .txt{
 	/*font-family: "Comic Sans MS";*/
 	font-family: "brick";
@@ -60,7 +62,9 @@ a:hover{
 	font-family: 'digital1';
 }
 #brick{
+	display: inline-block;
 	font-size: 15px;
+
 	font-family: 'brick';
 	font-weight: bold;
 	color: #00ff00;
