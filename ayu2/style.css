@@ -2,6 +2,12 @@
     font-family: 'pixel1'; /*a name to be used later*/
     src: url('./res/fonts/PressStart2P.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'pixel2'; /*a name to be used later*/
+    src: url('./res/fonts/Retro Computer_DEMO.ttf') format('truetype');
+}
+
+
 html {
   height: 100%;
 }
@@ -55,6 +61,39 @@ body {
 	border-radius: 10px;
 }
 .button .button_b{
+	color: black;
+	background-color: #01dda1;
+	border-right: solid 5px gray;
+	border-bottom: solid 5px gray;
+	border-radius: 10px;
+}
+
+.button .button_a2:hover{
+	color: black;
+	background-color: #FFFB00;
+	border-right: solid 5px gray;
+	border-bottom: solid 5px gray;
+	border-radius: 10px;
+}
+.button .button_a2{
+	font-size: 23px;
+	font-family: "pixel2";
+	color: black;
+	background-color: #eeea20;
+	border-right: solid 5px gray;
+	border-bottom: solid 5px gray;
+	border-radius: 10px;
+}
+.button .button_b2:hover{
+	color: black;
+	background-color: #00FFB3;
+	border-right: solid 5px gray;
+	border-bottom: solid 5px gray;
+	border-radius: 10px;
+}
+.button .button_b2{
+	font-size: 23px;
+	font-family: "pixel2";
 	color: black;
 	background-color: #01dda1;
 	border-right: solid 5px gray;
