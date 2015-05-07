@@ -133,3 +133,15 @@ body {
 	border-bottom: solid 5px #000080;
 	border-right: solid 5px #000080;
 }
+.frame2{
+	display: table-cell;
+	font-family: "pixel1";
+	color: #00FF00;
+	font-size: 40px;
+	padding: 10px;
+	background-color: black;
+	border: solid blue 5px;
+	border-radius: 5px;
+	border-bottom: solid 5px #000080;
+	border-right: solid 5px #000080;
+}
