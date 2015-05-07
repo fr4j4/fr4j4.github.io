@@ -29,7 +29,16 @@ body {
   	position: fixed;
   	z-index: -1;
 }
-.button *{
+
+.button_a:hover{
+
+	color: black;
+	background-color: #FFFB00;
+	border-right: solid 5px gray;
+	border-bottom: solid 5px gray;
+	border-radius: 10px;
+}
+.button_a{
 	font-family: "pixel1";
 	font-size: 20px;
 	display: table-cell;
@@ -38,29 +47,28 @@ body {
 	height: auto;
 	width: auto;
 	border: solid 5px white;
-}
-.button .button_a:hover{
-	color: black;
-	background-color: #FFFB00;
-	border-right: solid 5px gray;
-	border-bottom: solid 5px gray;
-	border-radius: 10px;
-}
-.button .button_a{
 	color: black;
 	background-color: #eeea20;
 	border-right: solid 5px gray;
 	border-bottom: solid 5px gray;
 	border-radius: 10px;
 }
-.button .button_b:hover{
+.button_b:hover{
 	color: black;
 	background-color: #00FFB3;
 	border-right: solid 5px gray;
 	border-bottom: solid 5px gray;
 	border-radius: 10px;
 }
-.button .button_b{
+.button_b{
+	font-family: "pixel1";
+	font-size: 20px;
+	display: table-cell;
+	padding: 10px;
+	text-decoration: none;
+	height: auto;
+	width: auto;
+	border: solid 5px white;
 	color: black;
 	background-color: #01dda1;
 	border-right: solid 5px gray;
@@ -68,14 +76,21 @@ body {
 	border-radius: 10px;
 }
 
-.button .button_a2:hover{
+.button_a2:hover{
 	color: black;
 	background-color: #FFFB00;
 	border-right: solid 5px gray;
 	border-bottom: solid 5px gray;
-	border-radius: 10px;
 }
-.button .button_a2{
+.button_a2{
+	font-family: "pixel1";
+	font-size: 20px;
+	display: table-cell;
+	padding: 10px;
+	text-decoration: none;
+	height: auto;
+	width: auto;
+	border: solid 5px white;
 	font-size: 23px;
 	padding: 5px;
 	font-family: "pixel2";
@@ -83,22 +98,27 @@ body {
 	background-color: #eeea20;
 	border-right: solid 5px gray;
 	border-bottom: solid 5px gray;
-	border-radius: 10px;
+	border-radius: 5px;
 }
-.button .button_b2:hover{
+.button_b2:hover{
 	color: black;
 	background-color: #00FFB3;
 	border-right: solid 5px gray;
 	border-bottom: solid 5px gray;
-	border-radius: 10px;
 }
-.button .button_b2{
-	padding: 5px;
-	font-size: 23px;
+.button_b2{
 	font-family: "pixel2";
+	font-size: 23px;
+	display: table-cell;
+	padding: 10px;
+	text-decoration: none;
+	height: auto;
+	width: auto;
+	border: solid 5px white;
+	padding: 5px;
 	color: black;
 	background-color: #01dda1;
 	border-right: solid 5px gray;
 	border-bottom: solid 5px gray;
-	border-radius: 10px;
+	border-radius: 5px;
 }
