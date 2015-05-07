@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'pixel1'; /*a name to be used later*/
+    src: url('./res/fonts/PressStart2P.ttf') format('truetype');
+}
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #AEC6CF;
+  background-image:linear-gradient(45deg,black, black);
+
+}
+#lineas{
+	position: absolute;
+  	background-color: transparent;
+  	background-image: linear-gradient(0deg, transparent 25%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent);
+  	height:100%;
+  	width: 100%;
+  	background-size:100px 100px;
+  	position: fixed;
+  	z-index: -1;
+}
+.button *{
+	font-family: "pixel1";
+	font-size: 20px;
+	display: table-cell;
+	padding: 10px;
+	text-decoration: none;
+	height: auto;
+	width: auto;
+	border: solid 5px white;
+}
+.button .button_a:hover{
+	color: black;
+	background-color: #FFFB00;
+	border-right: solid 5px gray;
+	border-bottom: solid 5px gray;
+	border-radius: 10px;
+}
+.button .button_a{
+	color: black;
+	background-color: #eeea20;
+	border-right: solid 5px gray;
+	border-bottom: solid 5px gray;
+	border-radius: 10px;
+}
+.button .button_b:hover{
+	color: black;
+	background-color: #00FFB3;
+	border-right: solid 5px gray;
+	border-bottom: solid 5px gray;
+	border-radius: 10px;
+}
+.button .button_b{
+	color: black;
+	background-color: #01dda1;
+	border-right: solid 5px gray;
+	border-bottom: solid 5px gray;
+	border-radius: 10px;
+}
