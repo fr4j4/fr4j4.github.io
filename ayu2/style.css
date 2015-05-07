@@ -75,7 +75,6 @@ body {
 	border-bottom: solid 5px gray;
 	border-radius: 10px;
 }
-
 .button_a2:hover{
 	color: black;
 	background-color: #FFFB00;
@@ -121,4 +120,16 @@ body {
 	border-right: solid 5px gray;
 	border-bottom: solid 5px gray;
 	border-radius: 5px;
+}
+.frame1{
+	display: table-cell;
+	font-family: "pixel1";
+	color: black;
+	font-size: 40px;
+	padding: 10px;
+	background-color: white;
+	border: solid blue 5px;
+	border-radius: 5px;
+	border-bottom: solid 5px #000080;
+	border-right: solid 5px #000080;
 }
