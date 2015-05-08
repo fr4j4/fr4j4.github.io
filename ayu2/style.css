@@ -17,7 +17,6 @@ body {
   height: 100%;
   background-color: #AEC6CF;
   background-image:linear-gradient(45deg,black, black);
-
 }
 #lineas{
 	position: absolute;
@@ -29,7 +28,6 @@ body {
   	position: fixed;
   	z-index: -1;
 }
-
 .button_a:hover{
 
 	color: black;
@@ -123,7 +121,7 @@ body {
 }
 .frame1{
 	display: table-cell;
-	font-family: "pixel1";
+	font-family: "pixel2";
 	color: black;
 	font-size: 40px;
 	padding: 10px;
@@ -135,7 +133,7 @@ body {
 }
 .frame2{
 	display: table-cell;
-	font-family: "pixel1";
+	font-family: "pixel2";
 	color: #00FF00;
 	font-size: 40px;
 	padding: 10px;
@@ -144,4 +142,19 @@ body {
 	border-radius: 5px;
 	border-bottom: solid 5px #000080;
 	border-right: solid 5px #000080;
+}
+
+.frame1 h1{
+	font-size: 30px;
+}
+.frame1 h2{
+	font-size: 15px;
+	line-height: 20px;
+}
+.frame2 h1{
+	font-size: 30px;
+}
+.frame2 h2{
+	font-size: 15px;
+	line-height: 20px;
 }
