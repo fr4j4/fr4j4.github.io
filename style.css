@@ -35,7 +35,7 @@ body {
 	display: table-cell;
 	font: caption;
 	font-weight: bold;
-	border-left: groove; black 1px;
+	border: outset  2px;
 }
 
 #lineas{

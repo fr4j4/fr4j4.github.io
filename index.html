@@ -5,15 +5,47 @@
 	<title>fr4j4</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" type="image/jpeg" href="./res/img/favicon.jpg"/>
+	<script type="text/javascript">
+		var date = new Date();
+		var current_hour = date.getHours();
+		var current_min = date.getMinutes();
+		var timeStr=" ";
+		if(current_hour>0&&current_hour<12){
+			timeStr=" a.m";
+		}else{
+			timeStr=" p.m";	
+		}
+		if(current_hour<10){
+			current_hour="0"+current_hour;
+		}
+		if(current_min<10){
+			current_min="0"+current_min;
+		}
+		timeStr=current_hour+":"+current_min+timeStr;
+
+	</script>
+
 </head>
 <body>
 	<!--<div id="lineas"></div>-->
 	<div id="topBar">
-		<table>
+		<table >
 			<tr>
-				<td class="separador" style="border-right: groove; black 1px;"><a href="http://www.google.cl">Inicio</a></td>
+				<td colspan="5" class="separador"><a href="http://fr4j4.github.io">Inicio</a></td>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 			</tr>
 		</table>
+
+
+	<div class="separador" style="position:absolute; z-index:2;right:4px;top:6px;"><script type="text/javascript">document.write(timeStr)</script></div>
 	</div>
 	<div class="scanlines"></div>
 	<center>
