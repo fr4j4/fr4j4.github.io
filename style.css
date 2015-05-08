@@ -89,10 +89,10 @@ body {
 .frame1{
 	text-shadow:1px 1px #AEEEEE;
 	display: table-cell;
-	font-family: "pixel2";
+	font-family: "pixel1";
 	color: black;
 	font-size: 40px;
-	padding: 10px;
+	padding: 5px;
 	background-color: white;
 	border: solid blue 5px;
 	border-radius: 5px;
@@ -102,10 +102,10 @@ body {
 .frame2{
 	text-shadow:1px 1px rgba(0,0,255,0.4);
 	display: table-cell;
-	font-family: "pixel2";
+	font-family: "pixel1";
 	color: #00FF00;
 	font-size: 40px;
-	padding: 10px;
+	padding: 5px;
 	background-color: black;
 	border: solid #EF0AA0 5px;
 	border-radius: 5px;
