@@ -88,17 +88,17 @@ body {
 	border-right: solid 5px #000080;
 }
 .frame2{
-	text-shadow:1px 1px blue;
+	text-shadow:1px 1px rgba(0,0,255,0.4);
 	display: table-cell;
 	font-family: "pixel2";
 	color: #00FF00;
 	font-size: 40px;
 	padding: 10px;
 	background-color: black;
-	border: solid blue 5px;
+	border: solid #EF0AA0 5px;
 	border-radius: 5px;
-	border-bottom: solid 5px #000080;
-	border-right: solid 5px #000080;
+	border-bottom: solid 5px #CD08A0;
+	border-right: solid 5px #CD08A0;
 }
 
 .frame1 h1{
