@@ -12,23 +12,22 @@ a{
 	color: inherit;
 }
 
-html, body{
-  
+html {
+  height: 100%;
 }
 body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
 	background-color: black;
 }
 
 #topBar{
 	background-color: lightgray;
-	position: fixed;
-	left: 0px;
-	bottom:0px;
 	border:groove 4px;
 	width: 100%;
 	height: auto;
 	max-height: 100px;
-
 	
 }
 .separador{
