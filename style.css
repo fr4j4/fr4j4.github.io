@@ -7,18 +7,37 @@
     src: url('./res/fonts/Retro Computer_DEMO.ttf') format('truetype');
 }
 
-
+a{
+	text-decoration: none;
+	color: inherit;
+}
 
 html {
   height: 100%;
 }
 body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background-color: #AEC6CF;
-  background-image:linear-gradient(45deg,black, black);
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: black;
 }
+
+#topBar{
+	background-color: lightgray;
+	border:groove 4px;
+	width: 100%;
+	height: auto;
+	max-height: 100px;
+	
+}
+.separador{
+	background-color: transparent;
+	display: table-cell;
+	font: caption;
+	font-weight: bold;
+	border-left: groove; black 1px;
+}
+
 #lineas{
 	position: absolute;
   	background-color: transparent;
