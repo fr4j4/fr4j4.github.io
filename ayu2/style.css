@@ -28,60 +28,15 @@ body {
   	position: fixed;
   	z-index: -1;
 }
-.button_a:hover{
 
+.button_a:hover{
 	color: black;
 	background-color: #FFFB00;
 	border-right: solid 5px gray;
 	border-bottom: solid 5px gray;
-	border-radius: 10px;
 }
 .button_a{
-	font-family: "pixel1";
-	font-size: 20px;
-	display: table-cell;
-	padding: 10px;
-	text-decoration: none;
-	height: auto;
-	width: auto;
-	border: solid 5px white;
-	color: black;
-	background-color: #eeea20;
-	border-right: solid 5px gray;
-	border-bottom: solid 5px gray;
-	border-radius: 10px;
-}
-.button_b:hover{
-	color: black;
-	background-color: #00FFB3;
-	border-right: solid 5px gray;
-	border-bottom: solid 5px gray;
-	border-radius: 10px;
-}
-.button_b{
-	font-family: "pixel1";
-	font-size: 20px;
-	display: table-cell;
-	padding: 10px;
-	text-decoration: none;
-	height: auto;
-	width: auto;
-	border: solid 5px white;
-	color: black;
-	background-color: #01dda1;
-	border-right: solid 5px gray;
-	border-bottom: solid 5px gray;
-	border-radius: 10px;
-}
-.button_a2:hover{
-	color: black;
-	background-color: #FFFB00;
-	border-right: solid 5px gray;
-	border-bottom: solid 5px gray;
-}
-.button_a2{
-	font-family: "pixel1";
-	font-size: 20px;
+	text-shadow:2px 2px white;
 	display: table-cell;
 	padding: 10px;
 	text-decoration: none;
@@ -89,7 +44,7 @@ body {
 	width: auto;
 	border: solid 5px white;
 	font-size: 23px;
-	padding: 5px;
+	padding: 2px;
 	font-family: "pixel2";
 	color: black;
 	background-color: #eeea20;
@@ -97,24 +52,24 @@ body {
 	border-bottom: solid 5px gray;
 	border-radius: 5px;
 }
-.button_b2:hover{
+.button_b:hover{
 	color: black;
 	background-color: #00FFB3;
 	border-right: solid 5px gray;
 	border-bottom: solid 5px gray;
 }
-.button_b2{
+.button_b{
+	text-shadow:2px 2px white;
 	font-family: "pixel2";
 	font-size: 23px;
 	display: table-cell;
-	padding: 10px;
 	text-decoration: none;
 	height: auto;
 	width: auto;
-	border: solid 5px white;
-	padding: 5px;
+	padding: 2px;
 	color: black;
 	background-color: #01dda1;
+	border: solid 5px white;
 	border-right: solid 5px gray;
 	border-bottom: solid 5px gray;
 	border-radius: 5px;
@@ -132,6 +87,7 @@ body {
 	border-right: solid 5px #000080;
 }
 .frame2{
+	text-shadow:1px 1px blue;
 	display: table-cell;
 	font-family: "pixel2";
 	color: #00FF00;
