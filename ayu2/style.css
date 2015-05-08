@@ -75,6 +75,7 @@ body {
 	border-radius: 5px;
 }
 .frame1{
+	text-shadow:1px 1px #AEEEEE;
 	display: table-cell;
 	font-family: "pixel2";
 	color: black;
