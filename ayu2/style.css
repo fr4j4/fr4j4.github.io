@@ -10,6 +10,12 @@ html{
 	/*background-image: url("./res/bg/bg3.jpg");*/
 	background-color: black;
 	background-size:cover;  
+	-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
 }
 #background{
 	position: absolute;
