@@ -64,3 +64,7 @@ user-select: none;
 	border: solid 1px #A19eB8;
 	background-color: #000000;
 }
+.item_list a{
+	text-decoration: none;
+	color: #119eA8;
+}
