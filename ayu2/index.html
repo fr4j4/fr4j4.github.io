@@ -5,7 +5,13 @@
 	<title>fr4j4</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" type="image/jpeg" href="./res/img/favicon.jpg"/>
-	<style type="text/css">body, a:hover {cursor: url(http://cur.cursors-4u.net/cursors/cur-2/cur222.cur), progress !important;}</style>
+	<style type="text/css">*{cursor: url(http://cur.cursors-4u.net/cursors/cur-2/cur222.cur), progress !important;}</style>
+	<script src="./res/jquery.js"></script>
+	<script type="text/javascript">
+		function doPost(){
+		    $.post("folder.html");
+		}
+	</script>
 </head>
 <header>
 	<div id="titulo">Ayudantia info023 - programacion</div>
@@ -13,18 +19,20 @@
 <body>
 	<div id="background"></div>
 	<div id="content">
-			<ul>Documentos
-				<li class="item_list" style="padding:5px;"><a href=""><img src="./res/img/folder.png" width="25px"> - 2013 sem1</a></li>
-				<li class="item_list" style="padding:5px;"><a href=""><img src="./res/img/folder.png" width="25px"> - 2013 sem2</a></li>
-				<li class="item_list" style="padding:5px;"><a href=""><img src="./res/img/folder.png" width="25px"> - 2014 sem1</a></li>
-				<li class="item_list" style="padding:5px;"><a href=""><img src="./res/img/folder.png" width="25px"> - 2014 sem2</a></li>
-				<li class="item_list" style="padding:5px;"><a href=""><img src="./res/img/folder.png" width="25px"> - 2015 sem1</a></li>
+			<ul class="lista" >
+				<div class="title">Documentos</div>
+				<li onclick="doPost()" class="item_list" style="padding:5px;"><img src="./res/img/folder.png" width="25px"> - 2013 sem1</li>
+				<li onclick="doPost()" class="item_list" style="padding:5px;"><img src="./res/img/folder.png" width="25px"> - 2013 sem2</li>
+				<li onclick="doPost()" class="item_list" style="padding:5px;"><img src="./res/img/folder.png" width="25px"> - 2014 sem1</li>
+				<li onclick="doPost()" class="item_list" style="padding:5px;"><img src="./res/img/folder.png" width="25px"> - 2014 sem2</li>
+				<li onclick="doPost()" class="item_list" style="padding:5px;"><img src="./res/img/folder.png" width="25px"> - 2015 sem1</li>
+
 			</ul>
 	</div>
 </body>
 <footer>
 	<marquee id="bot_marquee"behavior="scroll" direction="left"scrollamount="10" scrolldelay="5">
-		- Nuevo diseño bajo desarrollo - 
+		- [16/08/2015] Nuevo diseño bajo desarrollo - 
 	</marquee>
 </footer>
 </html>

@@ -53,18 +53,23 @@ user-select: none;
 	font-family: "destructo_reg";
 	color: #119eA8;
 }
-.item_list{
+.lista li{
+	font-size: 20px;
 	display: block;
 	vertical-align: middle;
 	max-width: 200px;
 	list-style-type: none; 
-	border: solid 1px #119eA8;
+	border: solid 2px #119eA8;
 }
-.item_list:hover{
-	border: solid 1px #A19eB8;
-	background-color: #000000;
+.lista li:hover{
+	background-color: #015eA8;
+	color:white;
 }
-.item_list a{
+.lista .title{
+	font-size: 25px;
+}
+a{
+	display: block;
 	text-decoration: none;
 	color: #119eA8;
 }
