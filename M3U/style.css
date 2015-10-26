@@ -244,15 +244,16 @@ header .logo a {
     display: inline-block;
 }
 .social {
+
     float: right;
-    padding: 2px 0;
+    padding: 0px 0;
 }
 .social li {
     float: left;
-    margin: 0 0 0 22px;
+    margin: 0 0 0 5px;
 }
 .social li a {
-    display: block;
+    display: inline-block;
     width: 48px;
     height: 48px;
     text-indent: -9999px;
@@ -306,6 +307,11 @@ footer .logo {
 }
 footer .logo img {
     display: block;
+}
+footer p{
+    color: #673AB7;
+    font-weight: bold;
+    top: 100px;
 }
 .istore {
     float: left;
@@ -411,7 +417,7 @@ footer .logo img {
     font-size: 20px;
     text-decoration: none;
     padding: 0 30px;
-    background: #ffffff;
+    background: #57e669;
     text-transform: uppercase;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
