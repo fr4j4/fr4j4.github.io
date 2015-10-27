@@ -408,7 +408,8 @@ footer p{
     font-weight: bold;
 }
 .promo-button {
-    color:#673AB7;
+    color: black;
+    /*color:#673AB7;*/
     display: inline-block;
     white-space: nowrap;
     height: 52px;
@@ -417,7 +418,8 @@ footer p{
     font-size: 20px;
     text-decoration: none;
     padding: 0 30px;
-    background: #57e669;
+    /*background: #57e669;*/
+    background: #FF5C5C;
     text-transform: uppercase;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
