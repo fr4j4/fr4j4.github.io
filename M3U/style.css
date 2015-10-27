@@ -381,6 +381,16 @@ footer p{
     background: #673AB7;
     color: #ffffff;
 }
+.promo .releases-box{
+    text-decoration: none;
+    position: absolute;
+    color:black;
+    font-weight: bold;
+    top: 0px;
+}
+.promo .releases-box:hover{
+    color: lightgreen;
+}
 .promo .wrap {
     position: relative;
     min-height: 634px;
