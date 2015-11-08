@@ -1,0 +1,9 @@
+Combinar listas:
+	Tener una abierta como siempre, pero permitir combinarla con una lista x.
+	si existen canales repetidos, se conserva el canal de la lista principal.
+
+Explorar otros tipos de estructura:
+	Actualmente el programa opera con una lista M3U dada por el formato:
+		blablabla
+		blablabla
+		blablabla
